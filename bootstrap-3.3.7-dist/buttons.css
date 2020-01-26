@@ -1,0 +1,9 @@
+﻿.events {
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: 1px solid white;
+    cursor: pointer;
+    border-radius: 5PX;
+    color:white;
+    /*overflow: hidden;*/
+}
