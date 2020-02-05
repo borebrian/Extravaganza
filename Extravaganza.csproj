@@ -88,8 +88,32 @@
     <Content Include="bootstrap-3.3.7-dist\OnOff.css" />
     <Content Include="bootstrap-3.3.7-dist\tabs.css" />
     <Content Include="bootstrap-3.3.7-dist\tabs.js" />
+    <Content Include="Styles\JavaScript.js" />
+    <Content Include="TEST.aspx" />
+    <Content Include="Voting_pages\Cometitors-images\eight.jpeg" />
+    <Content Include="Voting_pages\Cometitors-images\eleven.jpeg" />
+    <Content Include="Voting_pages\Cometitors-images\five.jpeg" />
+    <Content Include="Voting_pages\Cometitors-images\four.jpeg" />
+    <Content Include="Voting_pages\Cometitors-images\nine.jpeg" />
+    <Content Include="Voting_pages\Cometitors-images\one.jpeg" />
+    <Content Include="Voting_pages\Cometitors-images\seven.jpeg" />
+    <Content Include="Voting_pages\Cometitors-images\six.jpeg" />
+    <Content Include="Voting_pages\Cometitors-images\ten.jpeg" />
+    <Content Include="Voting_pages\Cometitors-images\three.jpeg" />
+    <Content Include="Voting_pages\Cometitors-images\tw.jpeg" />
+    <Content Include="Voting_pages\Images\dj.jpg" />
+    <Content Include="Voting_pages\Images\eravaganz.jpg" />
+    <Content Include="Voting_pages\Images\logo.png" />
+    <Content Include="Voting_pages\Images\party.jpg" />
+    <Content Include="Styles\Style1.css" />
+    <Content Include="Voting_pages\Images\party1.jpg" />
+    <Content Include="Voting_pages\Images\Test.aspx" />
+    <Content Include="Voting_pages\Images\dev.jpg" />
+    <Content Include="Voting_pages\Login.aspx" />
+    <Content Include="Voting_pages\Results.aspx" />
     <Content Include="Voting_pages\Voting.aspx" />
     <Content Include="Web.config" />
+    <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Admin\Admin.aspx.cs">
@@ -114,6 +138,34 @@
     <Compile Include="Site1.Master.designer.cs">
       <DependentUpon>Site1.Master</DependentUpon>
     </Compile>
+    <Compile Include="TEST.aspx.cs">
+      <DependentUpon>TEST.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TEST.aspx.designer.cs">
+      <DependentUpon>TEST.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Voting_pages\Images\Test.aspx.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Voting_pages\Images\Test.aspx.designer.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Voting_pages\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Voting_pages\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Voting_pages\Results.aspx.cs">
+      <DependentUpon>Results.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Voting_pages\Results.aspx.designer.cs">
+      <DependentUpon>Results.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Voting_pages\Voting.aspx.cs">
       <DependentUpon>Voting.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -121,13 +173,20 @@
     <Compile Include="Voting_pages\Voting.aspx.designer.cs">
       <DependentUpon>Voting.aspx</DependentUpon>
     </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="bootstrap-3.3.7-dist\css\bootstrap-theme.css.map" />
     <Content Include="bootstrap-3.3.7-dist\css\bootstrap-theme.min.css.map" />
     <Content Include="bootstrap-3.3.7-dist\css\bootstrap.css.map" />
     <Content Include="bootstrap-3.3.7-dist\css\bootstrap.min.css.map" />
-    <Content Include="bootstrap-3.3.7-dist\fonts\Century.ttf" />
+    <Content Include="Styles\Century.ttf" />
     <Content Include="bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.eot" />
     <Content Include="bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.woff" />

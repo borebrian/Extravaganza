@@ -1,0 +1,10 @@
+﻿@font-face {
+    font-family: Century Gothic;
+    src: url('../Styles/Century.ttf');
+}
+.panel-heading{
+    background-color:#337ab7;
+}
+body{
+    font-family:'Century Gothic'
+}
