@@ -13,12 +13,20 @@ namespace Extravaganza.Voting_pages
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            well2.Visible = false;
-            well3.Visible = false;
+            if (IsPostBack)
+            {
 
-            well4.Visible = false;
+            }
+            else {
 
-            well5.Visible = false;
+                well2.Visible = false;
+                well3.Visible = false;
+
+                well4.Visible = false;
+
+                well5.Visible = false;
+            }
+            
 
 
 
@@ -104,7 +112,10 @@ namespace Extravaganza.Voting_pages
 
 
             }
-           
+
+            pics.Visible = false;
+
+
         }
         protected void LinkButton1_Click1(object sender, EventArgs e)
         {
@@ -135,7 +146,8 @@ namespace Extravaganza.Voting_pages
                     Response.Cookies["two"].Expires = DateTime.Now.AddDays(20);
 
                   
-                    well1.Visible = false;
+                    well1.Visible = false;  
+                    
                     well3.Visible = true;
                     well4.Visible = false;
                     well5.Visible = false;
@@ -161,6 +173,8 @@ namespace Extravaganza.Voting_pages
 
 
             }
+            pics.Visible = false;
+
         }
         protected void LinkButton1_Click2(object sender, EventArgs e)
         {
@@ -210,6 +224,7 @@ namespace Extravaganza.Voting_pages
 
                 }
 
+                pics.Visible = false;
 
 
 
@@ -271,11 +286,12 @@ namespace Extravaganza.Voting_pages
 
             }
 
+            pics.Visible = false;
 
         }
         protected void LinkButton1_Click4(object sender, EventArgs e)
         {
-            if (RadioButtonList25.SelectedItem == null || RadioButtonList26.SelectedItem == null || RadioButtonList27.SelectedItem == null || RadioButtonList28.SelectedItem == null || RadioButtonList29.SelectedItem == null || RadioButtonList30.SelectedItem == null || RadioButtonList31.SelectedItem == null|| RadioButtonList33.SelectedItem == null || RadioButtonList34.SelectedItem == null || RadioButtonList35.SelectedItem == null)
+            if (RadioButtonList32.SelectedItem == null || RadioButtonList25.SelectedItem == null || RadioButtonList26.SelectedItem == null || RadioButtonList27.SelectedItem == null || RadioButtonList28.SelectedItem == null || RadioButtonList29.SelectedItem == null || RadioButtonList30.SelectedItem == null || RadioButtonList31.SelectedItem == null|| RadioButtonList33.SelectedItem == null || RadioButtonList34.SelectedItem == null || RadioButtonList35.SelectedItem == null || RadioButtonList39.SelectedItem ==null || RadioButtonList38.SelectedItem==null)
             {
                 Page.ClientScript.RegisterStartupScript(this.GetType(), "CallMyFunction", "addingusermodal()", true);
             }
@@ -295,9 +311,17 @@ namespace Extravaganza.Voting_pages
                         "INSERT INTO Competitors(Post_ID,Name)VALUES('29','" + RadioButtonList29.SelectedItem.Value + "')" +
                         "INSERT INTO Competitors(Post_ID,Name)VALUES('30','" + RadioButtonList30.SelectedItem.Value + "')" +
                         "INSERT INTO Competitors(Post_ID,Name)VALUES('31','" + RadioButtonList31.SelectedItem.Value + "')" +
-                       
+                        "INSERT INTO Competitors(Post_ID,Name)VALUES('32','" + RadioButtonList32.SelectedItem.Value + "')" +
                         "INSERT INTO Competitors(Post_ID,Name)VALUES('34','" + RadioButtonList34.SelectedItem.Value + "')" +
                         "INSERT INTO Competitors(Post_ID,Name)VALUES('35','" + RadioButtonList35.SelectedItem.Value + "')" +
+                        "INSERT INTO Competitors(Post_ID,Name)VALUES('36','" + RadioButtonList36.SelectedItem.Value + "')" +
+                        "INSERT INTO Competitors(Post_ID,Name)VALUES('37','" + RadioButtonList37.SelectedItem.Value + "')" +
+                        "INSERT INTO Competitors(Post_ID,Name)VALUES('38','" + RadioButtonList38.SelectedItem.Value + "')" +
+                        "INSERT INTO Competitors(Post_ID,Name)VALUES('39','" + RadioButtonList39.SelectedItem.Value + "')" +
+
+
+
+
                         "INSERT INTO Competitors(Post_ID,Name)VALUES('33','" + RadioButtonList33.SelectedItem.Value + "')";
 
                     SqlCommand shila = new SqlCommand(koech, shelly);
@@ -329,6 +353,7 @@ namespace Extravaganza.Voting_pages
 
             }
 
+            pics.Visible = false;
 
         }
         protected void next(object sender, EventArgs e)
@@ -380,14 +405,14 @@ namespace Extravaganza.Voting_pages
         protected void dev(object sender, EventArgs e)
         {
 
-            string FileName = "Poster.jpg"; // It's a file name displayed on downloaded file on client side.
+            string FileName = "BoreBrian.jpg"; // It's a file name displayed on downloaded file on client side.
 
             System.Web.HttpResponse response = System.Web.HttpContext.Current.Response;
             response.ClearContent();
             response.Clear();
             response.ContentType = "image/jpeg";
             response.AddHeader("Content-Disposition", "attachment; filename=" + FileName + ";");
-            response.TransmitFile(Server.MapPath("~/Voting_pages/Images/dev.jpg"));
+            response.TransmitFile(Server.MapPath("~/Voting_pages/Images/BoreBrian.jpg"));
             response.Flush();
             response.End();
 

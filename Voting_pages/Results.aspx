@@ -16,7 +16,7 @@
     <p style="color:white">VOTING RESUTS</p>
 
     </nav></br>
-    <div class="container-fluid">
+    <div class="container-fluid" style="margin-top:50px;">
         <div class="row">
 
             <div class="col-lg-4 col-md-4  col-sm-4 col-xs-12">
@@ -236,7 +236,7 @@
               <div class="col-lg-4 col-md-4  col-sm-4 col-xs-12">
                 <div class="panel panel-primary">
                     <div class="panel-heading">
-                        <p>Best Designer of the year</p>
+                        <p>Best Graphic Designer of the year</p>
                     </div>
                     <div class="panel-body">
                 <asp:GridView ID="GridView9" runat="server"  class="table" BackColor="White" BorderColor="#336666" BorderStyle="Double" BorderWidth="3px" CellPadding="4" GridLines="Horizontal">
@@ -927,12 +927,148 @@
                     </div>
                     </div>
             </div>
+             <div class="col-lg-4 col-md-4  col-sm-4 col-xs-12">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <p>Kericho MC of the year</p>
+                    </div>
+                    <div class="panel-body">
+                <asp:GridView ID="GridView35" runat="server"  class="table" BackColor="White" BorderColor="#336666" BorderStyle="Double" BorderWidth="3px" CellPadding="4" GridLines="Horizontal">
+ <FooterStyle BackColor="#1C5E55" ForeColor="White" Font-Bold="True" />
+                    <HeaderStyle BackColor="#336666" Font-Bold="True" ForeColor="White" />
+                    <PagerStyle BackColor="#336666" ForeColor="White" HorizontalAlign="Center" />
+                    <RowStyle BackColor="White" ForeColor="#333333" />
+                    <SelectedRowStyle BackColor="#339966" Font-Bold="True" ForeColor="White" />
+                    <SortedAscendingCellStyle BackColor="#F7F7F7" />
+                    <SortedAscendingHeaderStyle BackColor="#487575" />
+                    <SortedDescendingCellStyle BackColor="#E5E5E5" />
+                    <SortedDescendingHeaderStyle BackColor="#275353" />
+                    
+                </asp:GridView>
+                        </div>
+                    <div class="panel-footer" style="text-align:center;font-size:20px;">
+                        <asp:Label ID="Label69" runat="server" class="label label-primary" Text="Winner:"></asp:Label>
+
+                        <asp:Label ID="Label70" runat="server" class="label label-default" Text=""></asp:Label>
+                    </div>
+                    </div>
+            </div>
+             <div class="col-lg-4 col-md-4  col-sm-4 col-xs-12">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <p>Male athletee of the year</p>
+                    </div>
+                    <div class="panel-body">
+                <asp:GridView ID="GridView36" runat="server"  class="table" BackColor="White" BorderColor="#336666" BorderStyle="Double" BorderWidth="3px" CellPadding="4" GridLines="Horizontal">
+ <FooterStyle BackColor="#1C5E55" ForeColor="White" Font-Bold="True" />
+                    <HeaderStyle BackColor="#336666" Font-Bold="True" ForeColor="White" />
+                    <PagerStyle BackColor="#336666" ForeColor="White" HorizontalAlign="Center" />
+                    <RowStyle BackColor="White" ForeColor="#333333" />
+                    <SelectedRowStyle BackColor="#339966" Font-Bold="True" ForeColor="White" />
+                    <SortedAscendingCellStyle BackColor="#F7F7F7" />
+                    <SortedAscendingHeaderStyle BackColor="#487575" />
+                    <SortedDescendingCellStyle BackColor="#E5E5E5" />
+                    <SortedDescendingHeaderStyle BackColor="#275353" />
+                    
+                </asp:GridView>
+                        </div>
+                    <div class="panel-footer" style="text-align:center;font-size:20px;">
+                        <asp:Label ID="Label71" runat="server" class="label label-primary" Text="Winner:"></asp:Label>
+
+                        <asp:Label ID="Label72" runat="server" class="label label-default" Text=""></asp:Label>
+                    </div>
+                    </div>
+            </div>
+
              
              
+        </div>
+        <div class="row">
+              <div class="col-lg-4 col-md-4  col-sm-4 col-xs-12">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <p>Poet of the year</p>
+                    </div>
+                    <div class="panel-body">
+                <asp:GridView ID="GridView37" runat="server"  class="table" BackColor="White" BorderColor="#336666" BorderStyle="Double" BorderWidth="3px" CellPadding="4" GridLines="Horizontal">
+ <FooterStyle BackColor="#1C5E55" ForeColor="White" Font-Bold="True" />
+                    <HeaderStyle BackColor="#336666" Font-Bold="True" ForeColor="White" />
+                    <PagerStyle BackColor="#336666" ForeColor="White" HorizontalAlign="Center" />
+                    <RowStyle BackColor="White" ForeColor="#333333" />
+                    <SelectedRowStyle BackColor="#339966" Font-Bold="True" ForeColor="White" />
+                    <SortedAscendingCellStyle BackColor="#F7F7F7" />
+                    <SortedAscendingHeaderStyle BackColor="#487575" />
+                    <SortedDescendingCellStyle BackColor="#E5E5E5" />
+                    <SortedDescendingHeaderStyle BackColor="#275353" />
+                    
+                </asp:GridView>
+                        </div>
+                    <div class="panel-footer" style="text-align:center;font-size:20px;">
+                        <asp:Label ID="Label73" runat="server" class="label label-primary" Text="Winner:"></asp:Label>
+
+                        <asp:Label ID="Label74" runat="server" class="label label-default" Text=""></asp:Label>
+                    </div>
+                    </div>
+            </div>
+
+              <div class="col-lg-4 col-md-4  col-sm-4 col-xs-12">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <p>Show host of the year</p>
+                    </div>
+                    <div class="panel-body">
+                <asp:GridView ID="GridView38" runat="server"  class="table" BackColor="White" BorderColor="#336666" BorderStyle="Double" BorderWidth="3px" CellPadding="4" GridLines="Horizontal">
+ <FooterStyle BackColor="#1C5E55" ForeColor="White" Font-Bold="True" />
+                    <HeaderStyle BackColor="#336666" Font-Bold="True" ForeColor="White" />
+                    <PagerStyle BackColor="#336666" ForeColor="White" HorizontalAlign="Center" />
+                    <RowStyle BackColor="White" ForeColor="#333333" />
+                    <SelectedRowStyle BackColor="#339966" Font-Bold="True" ForeColor="White" />
+                    <SortedAscendingCellStyle BackColor="#F7F7F7" />
+                    <SortedAscendingHeaderStyle BackColor="#487575" />
+                    <SortedDescendingCellStyle BackColor="#E5E5E5" />
+                    <SortedDescendingHeaderStyle BackColor="#275353" />
+                    
+                </asp:GridView>
+                        </div>
+                    <div class="panel-footer" style="text-align:center;font-size:20px;">
+                        <asp:Label ID="Label75" runat="server" class="label label-primary" Text="Winner:"></asp:Label>
+
+                        <asp:Label ID="Label76" runat="server" class="label label-default" Text=""></asp:Label>
+                    </div>
+                    </div>
+            </div>
+              <div class="col-lg-4 col-md-4  col-sm-4 col-xs-12">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <p>Political analyst of the year</p>
+                    </div>
+                    <div class="panel-body">
+                <asp:GridView ID="GridView39" runat="server"  class="table" BackColor="White" BorderColor="#336666" BorderStyle="Double" BorderWidth="3px" CellPadding="4" GridLines="Horizontal">
+ <FooterStyle BackColor="#1C5E55" ForeColor="White" Font-Bold="True" />
+                    <HeaderStyle BackColor="#336666" Font-Bold="True" ForeColor="White" />
+                    <PagerStyle BackColor="#336666" ForeColor="White" HorizontalAlign="Center" />
+                    <RowStyle BackColor="White" ForeColor="#333333" />
+                    <SelectedRowStyle BackColor="#339966" Font-Bold="True" ForeColor="White" />
+                    <SortedAscendingCellStyle BackColor="#F7F7F7" />
+                    <SortedAscendingHeaderStyle BackColor="#487575" />
+                    <SortedDescendingCellStyle BackColor="#E5E5E5" />
+                    <SortedDescendingHeaderStyle BackColor="#275353" />
+                    
+                </asp:GridView>
+                        </div>
+                    <div class="panel-footer" style="text-align:center;font-size:20px;">
+                        <asp:Label ID="Label77" runat="server" class="label label-primary" Text="Winner:"></asp:Label>
+
+                        <asp:Label ID="Label78" runat="server" class="label label-default" Text=""></asp:Label>
+                    </div>
+                    </div>
+    <asp:ImageButton ID="ImageButton2" runat="server" class="img-circle" Style="right: 0; bottom: 0; background-color: #ffffff; padding: 5px; margin: 20px;margin-bottom:80px; width: 40px; height: 40px; position: fixed; box-shadow: 2px 3px 7px #000000;" ImageUrl="~/bootstrap-3.3.7-dist/Images/logout.png" OnClick="ImageButton2_Click" />
+
+            </div>
+
         </div>
 
 
 
-    </div>
-
+ </div>
 </asp:Content>

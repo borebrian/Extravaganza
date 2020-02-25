@@ -33,15 +33,6 @@ namespace Extravaganza.Voting_pages
         protected global::System.Web.UI.WebControls.ImageButton ImageButton1;
 
         /// <summary>
-        /// Timer1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.Timer Timer1;
-
-        /// <summary>
         /// TextBox2 control.
         /// </summary>
         /// <remarks>
@@ -49,6 +40,15 @@ namespace Extravaganza.Voting_pages
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBox2;
+
+        /// <summary>
+        /// pics control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl pics;
 
         /// <summary>
         /// Image1 control.
@@ -384,15 +384,6 @@ namespace Extravaganza.Voting_pages
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl Div1;
 
         /// <summary>
-        /// RadioButtonList19 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList19;
-
-        /// <summary>
         /// RadioButtonList20 control.
         /// </summary>
         /// <remarks>
@@ -409,6 +400,15 @@ namespace Extravaganza.Voting_pages
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList21;
+
+        /// <summary>
+        /// RadioButtonList19 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList19;
 
         /// <summary>
         /// RadioButtonList22 control.
@@ -544,6 +544,51 @@ namespace Extravaganza.Voting_pages
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList35;
+
+        /// <summary>
+        /// RadioButtonList32 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList32;
+
+        /// <summary>
+        /// RadioButtonList36 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList36;
+
+        /// <summary>
+        /// RadioButtonList38 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList38;
+
+        /// <summary>
+        /// RadioButtonList39 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList39;
+
+        /// <summary>
+        /// RadioButtonList37 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList37;
 
         /// <summary>
         /// LinkButton1 control.

@@ -78,6 +78,7 @@
     <Content Include="bootstrap-3.3.7-dist\customejs237895jS.js" />
     <Content Include="bootstrap-3.3.7-dist\Custom_Js.js" />
     <Content Include="bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="bootstrap-3.3.7-dist\Images\logout.png" />
     <Content Include="bootstrap-3.3.7-dist\js\bootstrap.js" />
     <Content Include="bootstrap-3.3.7-dist\js\bootstrap.min.js" />
     <Content Include="bootstrap-3.3.7-dist\js\JQ.js" />
@@ -90,6 +91,8 @@
     <Content Include="bootstrap-3.3.7-dist\tabs.js" />
     <Content Include="Styles\JavaScript.js" />
     <Content Include="TEST.aspx" />
+    <Content Include="Voting_pages\Images\eravaganz.jpg" />
+    <Content Include="Voting_pages\Images\BoreBrian.jpg" />
     <Content Include="Voting_pages\Cometitors-images\eight.jpeg" />
     <Content Include="Voting_pages\Cometitors-images\eleven.jpeg" />
     <Content Include="Voting_pages\Cometitors-images\five.jpeg" />
@@ -102,15 +105,14 @@
     <Content Include="Voting_pages\Cometitors-images\three.jpeg" />
     <Content Include="Voting_pages\Cometitors-images\tw.jpeg" />
     <Content Include="Voting_pages\Images\dj.jpg" />
-    <Content Include="Voting_pages\Images\eravaganz.jpg" />
     <Content Include="Voting_pages\Images\logo.png" />
     <Content Include="Voting_pages\Images\party.jpg" />
     <Content Include="Styles\Style1.css" />
     <Content Include="Voting_pages\Images\party1.jpg" />
     <Content Include="Voting_pages\Images\Test.aspx" />
-    <Content Include="Voting_pages\Images\dev.jpg" />
     <Content Include="Voting_pages\Login.aspx" />
     <Content Include="Voting_pages\Results.aspx" />
+    <Content Include="Voting_pages\Review.aspx" />
     <Content Include="Voting_pages\Voting.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
@@ -165,6 +167,13 @@
     </Compile>
     <Compile Include="Voting_pages\Results.aspx.designer.cs">
       <DependentUpon>Results.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Voting_pages\Review.aspx.cs">
+      <DependentUpon>Review.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Voting_pages\Review.aspx.designer.cs">
+      <DependentUpon>Review.aspx</DependentUpon>
     </Compile>
     <Compile Include="Voting_pages\Voting.aspx.cs">
       <DependentUpon>Voting.aspx</DependentUpon>

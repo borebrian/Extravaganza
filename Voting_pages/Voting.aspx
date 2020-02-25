@@ -15,7 +15,7 @@
     <nav class="navbar navbar-inverse navbar-fixed-top" style="text-align:center">
        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:extravaganzaConnectionString %>" SelectCommand="SELECT * FROM [Competitors]"></asp:SqlDataSource>
     <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/Voting_pages/Images/logo.png" style="width:200px;"/> </nav><br />
-    <asp:Timer ID="Timer1" runat="server"></asp:Timer>
+    <%--<asp:Timer ID="Timer1" runat="server"></asp:Timer>--%>
     <asp:TextBox ID="TextBox2" runat="server" CssClass="form-control"></asp:TextBox>
   <div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin-top:50px;">
     <!-- Indicators -->
@@ -62,7 +62,18 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
-    <div class="container-fluid" style="margin-top:15px;margin-bottom:15px;">
+    <div class="well text-center">
+            <h4>VOTING INSTRUCTIONS</h4>
+            <h5>1.Go through all the nominees per page and choose one nominee per category.</h5><br />
+            <h5>2.Ensure you select a nominee for every category before going to next page.</h5><br />
+            <h5>3.Once you submit your votes you will be taken to the next page automatically and you will not be able to modify your votes.</h5><br />
+           
+
+
+
+        </div>
+    <div class="container-fluid" runat="server" id="pics" style="margin-top:15px;margin-bottom:15px;">
+        
         <div class="panel panel-info">
             <div class="panel-heading">
                 <p>Competitors</p>
@@ -143,12 +154,12 @@
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                     <div class="panel panel-primary">
                         <div class="panel-heading">
-                            <P>The best Artist of the year</P><br/>
+                            <P>Artist of the year</P><br/>
 
                         </div>
                         <div class=" panel-body">
                             <asp:RadioButtonList ID="RadioButtonList1" runat="server">
-                                <asp:ListItem>Shazie Kem</asp:ListItem>
+                                <asp:ListItem>Shazie Kemz</asp:ListItem>
                                 <asp:ListItem>Mush Prince</asp:ListItem>
                                 <asp:ListItem>Swapkid</asp:ListItem>
                                 <asp:ListItem>Kanoti</asp:ListItem>
@@ -169,6 +180,12 @@
                             <asp:RadioButtonList ID="RadioButtonList2" runat="server">
                                 <asp:ListItem>Kamba Boy</asp:ListItem>
                                 <asp:ListItem>Dantex</asp:ListItem>
+                                <asp:ListItem>Verse Man 254</asp:ListItem>
+                                <asp:ListItem>Nadzua</asp:ListItem>
+                                <asp:ListItem>Mbosho Ree </asp:ListItem>
+                                <asp:ListItem>Bodmas </asp:ListItem>
+
+
                                 <asp:ListItem>Undercover gang</asp:ListItem>
                             </asp:RadioButtonList>
                         </div>
@@ -186,10 +203,11 @@
                         <div class=" panel-body">
                             <asp:RadioButtonList ID="RadioButtonList3" runat="server">
                                 <asp:ListItem>HD the DJ</asp:ListItem>
-                                <asp:ListItem>DJ Jayme</asp:ListItem>
+                                <asp:ListItem>DJ Skunk</asp:ListItem>
+                                <asp:ListItem>DJ Jeymie</asp:ListItem>
                                 <asp:ListItem>DJ Sharelz</asp:ListItem>
                                 <asp:ListItem>DJ Double T.</asp:ListItem>
-
+                                <asp:ListItem>DJ Elight</asp:ListItem>
                             </asp:RadioButtonList>
                         </div>
 
@@ -209,15 +227,14 @@
                         </div>
                         <div class=" panel-body">
                             <asp:RadioButtonList ID="RadioButtonList4" runat="server">
-                                <asp:ListItem>MC Nicco</asp:ListItem>
+                                <asp:ListItem>MC Niqqo</asp:ListItem>
                                 <asp:ListItem>Hype Blevo</asp:ListItem>
                                 <asp:ListItem>Limo 254</asp:ListItem>
-                                <asp:ListItem>Pinchez 254</asp:ListItem>
+                                <asp:ListItem>Flawlezz Ent.</asp:ListItem>
                                 <asp:ListItem>MC Palmer</asp:ListItem>
-                                <asp:ListItem>MC Lewis</asp:ListItem>
-                                <asp:ListItem>MC Yegon</asp:ListItem>
-                                <asp:ListItem>MC Ali</asp:ListItem>
+                                <asp:ListItem>MC Oskido</asp:ListItem>
 
+                             
 
 
 
@@ -236,11 +253,15 @@
                         </div>
                         <div class=" panel-body">
                             <asp:RadioButtonList ID="RadioButtonList5" runat="server">
-                                <asp:ListItem>Uni Adventures</asp:ListItem>
+                                <asp:ListItem>Uni Adventures & ENT</asp:ListItem>
                                 <asp:ListItem>Pinchez 254</asp:ListItem>
                                 <asp:ListItem>Limo Yano</asp:ListItem>
                                 <asp:ListItem>SIFCOM</asp:ListItem>
                                 <asp:ListItem>Double one</asp:ListItem>
+                                <asp:ListItem>Swagsounds</asp:ListItem>
+                                <asp:ListItem>Boom Planet</asp:ListItem>
+
+
 
 
                             </asp:RadioButtonList>
@@ -261,7 +282,9 @@
                                 <asp:ListItem>Kelvin Palmer Photography</asp:ListItem>
                                 <asp:ListItem>Yurie @ little pixel KE.</asp:ListItem>
                                 <asp:ListItem>Lix Photography</asp:ListItem>
-                                <asp:ListItem>Kubbin Photography</asp:ListItem>
+                                <asp:ListItem>Robbin Photography</asp:ListItem>
+                                <asp:ListItem>Smartmove Photography</asp:ListItem>
+
                                 <asp:ListItem>Yusuf Photography</asp:ListItem>
 
 
@@ -293,9 +316,9 @@
                             <asp:RadioButtonList ID="RadioButtonList7" runat="server">
                                 <asp:ListItem>Dud</asp:ListItem>
                                 <asp:ListItem>I-Family</asp:ListItem>
-                                <asp:ListItem>Star Worriors</asp:ListItem>
-                                <asp:ListItem>Gamblers</asp:ListItem>
-                                <asp:ListItem>YA Dancers</asp:ListItem>
+                                <asp:ListItem>Unpredictable254</asp:ListItem>
+
+                  
 
 
 
@@ -315,11 +338,13 @@
                         </div>
                         <div class=" panel-body">
                             <asp:RadioButtonList ID="RadioButtonList8" runat="server">
-                                <asp:ListItem>Sejo</asp:ListItem>
-                                <asp:ListItem>Amaro</asp:ListItem>
+                                <asp:ListItem>Sejo 254</asp:ListItem>
+                                <asp:ListItem>Amarroo4real</asp:ListItem>
                                 <asp:ListItem>MJ Skankaz</asp:ListItem>
                                 <asp:ListItem>Lovie</asp:ListItem>
                                 <asp:ListItem>Charity</asp:ListItem>
+                                <asp:ListItem>Kababaye</asp:ListItem>
+
                                 
 
                             </asp:RadioButtonList>
@@ -332,7 +357,7 @@
                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                     <div class="panel panel-primary">
                         <div class="panel-heading">
-                            <P>Designer of the year</P><br/>
+                            <P>Graphic Designer of the year</P><br/>
 
                         </div>
                         <div class=" panel-body">
@@ -340,8 +365,9 @@
                                 <asp:ListItem>Sanga Mlatino</asp:ListItem>
                                 <asp:ListItem>Bore Brian</asp:ListItem>
                                 <asp:ListItem>Ink Art Designs</asp:ListItem>
-                                <asp:ListItem>Boom Planet</asp:ListItem>
-                                <asp:ListItem>Kili Emmanuel</asp:ListItem>
+                                <asp:ListItem>BrandKings LTD </asp:ListItem>
+
+                               
 
                             
 
@@ -364,10 +390,12 @@
                         </div>
                         <div class=" panel-body">
                             <asp:RadioButtonList ID="RadioButtonList10" runat="server">
-                                <asp:ListItem>Salim Moster Labels</asp:ListItem>
-                                <asp:ListItem>Haddy Kaare</asp:ListItem>
-                                <asp:ListItem>Caleb</asp:ListItem>
+                                <asp:ListItem>Salim Monster Labels</asp:ListItem>
+                                <asp:ListItem>Haddy Kavare</asp:ListItem>
+                                <asp:ListItem>Caleb Designs</asp:ListItem>
                                 <asp:ListItem>Master piece Designs</asp:ListItem>
+                                <asp:ListItem>LittleKingsKE</asp:ListItem>
+
                              
 
                             </asp:RadioButtonList>
@@ -385,10 +413,11 @@
                         </div>
                         <div class=" panel-body">
                             <asp:RadioButtonList ID="RadioButtonList11" runat="server">
-                                <asp:ListItem>Danter Obuocha</asp:ListItem>
-                                <asp:ListItem>Salim</asp:ListItem>
+                                <asp:ListItem>Dante Obuocha</asp:ListItem>
+                                <asp:ListItem>Salim MonsterLabels</asp:ListItem>
                                 <asp:ListItem>Shashava Simon</asp:ListItem>
-                                <asp:ListItem>Luo Empire Goddee</asp:ListItem>
+                                <asp:ListItem>Luo Emperor Goddee</asp:ListItem>
+                                <asp:ListItem>Qassim  </asp:ListItem>
                               
 
 
@@ -402,14 +431,18 @@
                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                     <div class="panel panel-primary">
                         <div class="panel-heading">
-                            <P>Best Dressed Chick of the year</P><br/>
+                            <P>Best Dressed Chille of the year</P><br/>
 
                         </div>
                         <div class=" panel-body">
                             <asp:RadioButtonList ID="RadioButtonList12" runat="server">
-                                <asp:ListItem>Guchu Msoo</asp:ListItem>
+                                <asp:ListItem>Maureen Guchu</asp:ListItem>
                                 <asp:ListItem>Jemima Opanda</asp:ListItem>
                                 <asp:ListItem>Tiffany</asp:ListItem>
+                                <asp:ListItem>Vera Obiny</asp:ListItem>
+                                <asp:ListItem>Rina</asp:ListItem>
+
+
                             
 
 
@@ -436,11 +469,15 @@
                             <P>Male model of the year</P><br./>
 
                         </div>
-                        <div class=" panel-body">
+                        <div class="panel-body">
                             <asp:RadioButtonList ID="RadioButtonList13" runat="server">
                                 <asp:ListItem>Jay Jankwitz</asp:ListItem>
-                                <asp:ListItem>Asap Muema</asp:ListItem>
+                                <asp:ListItem>Asaph Brian</asp:ListItem>
                                 <asp:ListItem>Beast</asp:ListItem>
+                                <asp:ListItem>Luo Emperor</asp:ListItem>
+                                <asp:ListItem>Collo </asp:ListItem>
+
+
 
 
                            
@@ -454,16 +491,18 @@
                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                     <div class="panel panel-primary">
                         <div class="panel-heading">
-                            <P>Female odels of the year</P><br./>
+                            <P>Female models of the year</P><br./>
 
                         </div>
                         <div class=" panel-body">
                             <asp:RadioButtonList ID="RadioButtonList14" runat="server">
-                                <asp:ListItem>Amina Opuong</asp:ListItem>
-                                <asp:ListItem>Mary Atieno</asp:ListItem>
+                                <asp:ListItem>Amina Faith</asp:ListItem>
+                                <asp:ListItem>Meryl Atieno</asp:ListItem>
                                 <asp:ListItem>Grace Wahome</asp:ListItem>
                                 <asp:ListItem>Wairimo Valentine(Kenya Highlands)</asp:ListItem>
                                 <asp:ListItem>Charity</asp:ListItem>
+                                <asp:ListItem>Nelly  </asp:ListItem>
+
                                 
 
                             </asp:RadioButtonList>
@@ -486,7 +525,7 @@
                                 <asp:ListItem>Palmer Kelvin</asp:ListItem>
                                 <asp:ListItem>Limo Yano</asp:ListItem>
                                 <asp:ListItem>Meryl Atieno</asp:ListItem>
-                                <asp:ListItem>Dj Jaymie</asp:ListItem>
+                                <asp:ListItem>Dj Jeymie</asp:ListItem>
 
 
                             
@@ -512,8 +551,8 @@
                             <asp:RadioButtonList ID="RadioButtonList16" runat="server">
                                 <asp:ListItem>Alex Ojamong</asp:ListItem>
                                 <asp:ListItem>Peter maina</asp:ListItem>
-                                <asp:ListItem>Redemta Mutua</asp:ListItem>
-                                <asp:ListItem>Chesimet  </asp:ListItem>
+                                <asp:ListItem>Redempta Mutua</asp:ListItem>
+                                <asp:ListItem>Chesimet </asp:ListItem>
                              
                             </asp:RadioButtonList>
                         </div>
@@ -533,6 +572,8 @@
                                 <asp:ListItem>Abby</asp:ListItem>
                                 <asp:ListItem>Mima</asp:ListItem>
                                 <asp:ListItem>Mitchy</asp:ListItem>
+                                <asp:ListItem>Lyka</asp:ListItem>
+
                                
                               
 
@@ -554,7 +595,8 @@
                             <asp:RadioButtonList ID="RadioButtonList18" runat="server">
                                 <asp:ListItem>Sejo & Abby</asp:ListItem>
                                 <asp:ListItem>Vivian & Seddo</asp:ListItem>
-                                <asp:ListItem>Kimberly & Bore</asp:ListItem>
+                                <asp:ListItem>The Move Family</asp:ListItem>
+
                             </asp:RadioButtonList>
                         </div>
 
@@ -573,31 +615,7 @@
         <div class="well" runat="server" id="well4">
              <div class="well"  runat="server" id="Div1">
             <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                    <div class="panel panel-primary">
-                        <div class="panel-heading">
-                            <P>Spoken word artist of the year</P><br./>
-
-                        </div>
-                        <div class=" panel-body">
-                            <asp:RadioButtonList ID="RadioButtonList19" runat="server">
-                                <asp:ListItem>Shelly Kimberly</asp:ListItem>
-                                <asp:ListItem>Humble Ryan</asp:ListItem>
-                                <asp:ListItem>Double T.</asp:ListItem>
-                                <asp:ListItem>Danco</asp:ListItem>
-                                <asp:ListItem>PK the poet</asp:ListItem>
-
-
-
-
-                           
-                            </asp:RadioButtonList>
-                        </div>
-
-                    </div>
-
-
-                </div>
+               
                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                     <div class="panel panel-primary">
                         <div class="panel-heading">
@@ -627,10 +645,10 @@
                         </div>
                         <div class=" panel-body">
                             <asp:RadioButtonList ID="RadioButtonList21" runat="server">
-                                <asp:ListItem>Alphone</asp:ListItem>
-                                <asp:ListItem>Mwai</asp:ListItem>
+                                <asp:ListItem>Alphonce</asp:ListItem>
+                                <asp:ListItem>Director Mwai</asp:ListItem>
                                 <asp:ListItem>Sanga Mlatino</asp:ListItem>
-                                <asp:ListItem>Little pixel.ke</asp:ListItem>
+                                <asp:ListItem>LittlepixelKE</asp:ListItem>
                    
 
 
@@ -643,7 +661,28 @@
 
 
                 </div>'
+                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <P>Spoken word artist of the year</P><br./>
 
+                        </div>
+                        <div class=" panel-body">
+                            <asp:RadioButtonList ID="RadioButtonList19" runat="server">
+                                <asp:ListItem>Humble Ryan</asp:ListItem>
+                                <asp:ListItem>Lady Seah</asp:ListItem>
+                                
+                                <asp:ListItem>PK the poet</asp:ListItem>
+                                <asp:ListItem>Endlesstales</asp:ListItem>
+                                <asp:ListItem>Rimeless Eugene</asp:ListItem>
+
+                            </asp:RadioButtonList>
+                        </div>
+
+                    </div>
+
+
+                </div>
             </div>
 
             <div class="row">
@@ -661,6 +700,8 @@
                                 <asp:ListItem>Alphonce  </asp:ListItem>
                                 <asp:ListItem>Muthoni Msooh </asp:ListItem>
                                 <asp:ListItem>Chibu  </asp:ListItem>
+                                <asp:ListItem>Eunice Macharia</asp:ListItem>
+
 
 
                                 
@@ -675,7 +716,7 @@
                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                     <div class="panel panel-primary">
                         <div class="panel-heading">
-                            <P>Commedian of the year</P><br./>
+                            <P>Comedian of the year</P><br./>
 
                         </div>
                         <div class=" panel-body">
@@ -683,7 +724,7 @@
                                 <asp:ListItem>Limoh 254</asp:ListItem>
                                 <asp:ListItem>Blevoh</asp:ListItem>
                                 <asp:ListItem>MC Oskido </asp:ListItem>
-                                <asp:ListItem>GCode </asp:ListItem>
+                                <asp:ListItem>Peter The Comedian </asp:ListItem>
                                 
                                
                               
@@ -700,14 +741,14 @@
                     <div class="panel panel-primary">
                         <div class="panel-heading">
                             <P>Meme lords of the year </P><br/>
-
+                            
                         </div>
                         <div class=" panel-body">
                             <asp:RadioButtonList ID="RadioButtonList24" runat="server">
                                 <asp:ListItem>Gcode Giddie</asp:ListItem>
                                 <asp:ListItem>Deacon Amanda</asp:ListItem>
-                                <asp:ListItem>3</asp:ListItem>
-                                <asp:ListItem>4</asp:ListItem>
+                                <asp:ListItem>Doti</asp:ListItem>
+                                <asp:ListItem>Dicky254</asp:ListItem>
                                 
                             </asp:RadioButtonList>
                         </div>
@@ -739,9 +780,11 @@
                         </div>
                         <div class=" panel-body">
                             <asp:RadioButtonList ID="RadioButtonList25" runat="server">
+                                <asp:ListItem>Sanga Mlatino</asp:ListItem>
                                 <asp:ListItem>Jalen Nito</asp:ListItem>
                                 <asp:ListItem>Papa G. Goldin</asp:ListItem>
                                 <asp:ListItem>Kevoscore</asp:ListItem>
+
                             
 
 
@@ -758,13 +801,13 @@
                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                     <div class="panel panel-primary">
                         <div class="panel-heading">
-                            <P>Football Of the year</P><br/>
+                            <P>Footballer Of the year</P><br/>
 
                         </div>
                         <div class=" panel-body">
                             <asp:RadioButtonList ID="RadioButtonList26" runat="server">
                                 <asp:ListItem>Babu Shitty</asp:ListItem>
-                                <asp:ListItem>Alusa Mavin</asp:ListItem>
+                                <asp:ListItem>Alusa Marvin</asp:ListItem>
                                 <asp:ListItem>Felix</asp:ListItem>
                                <asp:ListItem>Samir</asp:ListItem>
 
@@ -785,16 +828,15 @@
                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                     <div class="panel panel-primary">
                         <div class="panel-heading">
-                            <P>Athletee of the year</P><br/>
+                            <P>Female Athletee of the year</P><br/>
 
                         </div>
                         <div class=" panel-body">
                             <asp:RadioButtonList ID="RadioButtonList27" runat="server">
-                                <asp:ListItem></asp:ListItem>
-                                <asp:ListItem></asp:ListItem>
-                                <asp:ListItem></asp:ListItem>
-                                <asp:ListItem></asp:ListItem>
-                                <asp:ListItem></asp:ListItem>
+                                <asp:ListItem>Sharon Laibich</asp:ListItem>
+                                <asp:ListItem>Sharon Kipkoi</asp:ListItem>
+                                <asp:ListItem>Naomi Wasilwa</asp:ListItem>
+                               
 
                    
 
@@ -807,7 +849,7 @@
                     </div>
 
 
-                </div>'
+                </div>
 
             </div>
 
@@ -840,13 +882,15 @@
                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                     <div class="panel panel-primary">
                         <div class="panel-heading">
-                            <P>Phylantrophic student of the year</P><br./>
+                            <P>Philanthropist student of the year</P><br/>
 
                         </div>
                         <div class=" panel-body">
                             <asp:RadioButtonList ID="RadioButtonList29" runat="server">
-                                <asp:ListItem>Peter Maina (Ngarisha ploti)</asp:ListItem>
-                                <asp:ListItem></asp:ListItem>
+                                <asp:ListItem>Eunice Macharia</asp:ListItem>
+                                <asp:ListItem>Peter Maina(Ngarisha Ploti)</asp:ListItem>
+
+
                            
                                 
                                
@@ -868,7 +912,7 @@
                         </div>
                         <div class=" panel-body">
                             <asp:RadioButtonList ID="RadioButtonList30" runat="server">
-                                <asp:ListItem>Dante Obuocha</asp:ListItem>
+                                <asp:ListItem>Dancan Obwocha</asp:ListItem>
                                 <asp:ListItem>Diana Njeri</asp:ListItem>
                                 <asp:ListItem>Hillary Rono</asp:ListItem>
                             </asp:RadioButtonList>
@@ -897,6 +941,17 @@
                                 <asp:ListItem>Juliet Salu</asp:ListItem>
                                 <asp:ListItem>Boy Vajo</asp:ListItem>
                                 <asp:ListItem>Madoller</asp:ListItem>
+                                <asp:ListItem>Tabi Ndii</asp:ListItem>
+                                <asp:ListItem>JB</asp:ListItem>
+                                <asp:ListItem>Canvo</asp:ListItem>
+                                <asp:ListItem>Toklezea</asp:ListItem>
+                                <asp:ListItem>Dokiche</asp:ListItem>
+
+
+
+
+
+
 
                             </asp:RadioButtonList>
                         </div>
@@ -909,13 +964,15 @@
                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                      <div class="panel panel-primary">
                         <div class="panel-heading">
-                            <P>Best Software Developper of the year </P><br/>
+                            <P>Best Software Developer of the year </P><br/>
 
                         </div>
                         <div class=" panel-body">
                             <asp:RadioButtonList ID="RadioButtonList33" runat="server">
                                 <asp:ListItem>Kili Emmanuel</asp:ListItem>
                                 <asp:ListItem>Laban Kiplagat</asp:ListItem>
+                                <asp:ListItem>Collins Musimi</asp:ListItem>
+
                                 <asp:ListItem>Mary Mbaire</asp:ListItem>
                                 <asp:ListItem>Bore Brian</asp:ListItem>
 
@@ -928,15 +985,15 @@
                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                      <div class="panel panel-primary">
                         <div class="panel-heading">
-                            <P>Kericho Dance crew </P><br/>
+                            <P>Kericho Dance crew of the year</P><br/>
 
                         </div>
                         <div class=" panel-body">
                             <asp:RadioButtonList ID="RadioButtonList34" runat="server">
-                                <asp:ListItem>Kili Emmanuel</asp:ListItem>
-                                <asp:ListItem>Laban Kiplagat</asp:ListItem>
-                                <asp:ListItem>Mary Mbaire</asp:ListItem>
-                                <asp:ListItem>Bore Brian</asp:ListItem>
+                                <asp:ListItem>Star Worriors</asp:ListItem>
+                                <asp:ListItem>Gamblers</asp:ListItem>
+                                <asp:ListItem>YA Dancers</asp:ListItem>
+
 
                             </asp:RadioButtonList>
                         </div>
@@ -952,15 +1009,28 @@
          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                      <div class="panel panel-primary">
                         <div class="panel-heading">
-                            <P>Kericho DJ </P><br/>
+                            <P>Kericho DJ of the year </P><br/>
 
                         </div>
                         <div class=" panel-body">
                             <asp:RadioButtonList ID="RadioButtonList35" runat="server">
-                                <asp:ListItem>Kili Emmanuel</asp:ListItem>
-                                <asp:ListItem>Laban Kiplagat</asp:ListItem>
-                                <asp:ListItem>Mary Mbaire</asp:ListItem>
-                                <asp:ListItem>Bore Brian</asp:ListItem>
+                                <asp:ListItem>DJ Barry</asp:ListItem>
+                                <asp:ListItem>Shaban</asp:ListItem>
+                                <asp:ListItem>Dian</asp:ListItem>
+                                <asp:ListItem>NY</asp:ListItem>
+                                
+
+                                <asp:ListItem>Enock</asp:ListItem>    
+                                <asp:ListItem>DJ Oti</asp:ListItem>
+                                <asp:ListItem>Josh</asp:ListItem>
+                                <asp:ListItem>Bomblast</asp:ListItem>
+                                <asp:ListItem>Styles</asp:ListItem>
+                                <asp:ListItem>Provixx</asp:ListItem>
+
+
+
+
+
 
                             </asp:RadioButtonList>
                         </div>
@@ -968,7 +1038,120 @@
                     </div>
 
 </div>
+           <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                     <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <P>Kericho MC of the year </P><br/>
+
+                        </div>
+                        <div class=" panel-body">
+                            <asp:RadioButtonList ID="RadioButtonList32" runat="server">
+                                <asp:ListItem>MC Lewis</asp:ListItem>
+                                <asp:ListItem>MC CJ</asp:ListItem>
+                                <asp:ListItem>MC Ali</asp:ListItem>
+                                <asp:ListItem>MC Yegon</asp:ListItem>
+                                <asp:ListItem>MC Lynton</asp:ListItem>
+                                <asp:ListItem>MC Tommy</asp:ListItem>
+                                <asp:ListItem>MC Bazenga</asp:ListItem>
+                            </asp:RadioButtonList>
+                        </div>
+
+                    </div>
+
+</div>
+           <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                     <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <P>Male Athletee of the year</P><br/>
+
+                        </div>
+                        <div class=" panel-body">
+                            <asp:RadioButtonList ID="RadioButtonList36" runat="server">
+                                <asp:ListItem>Mike Kitum</asp:ListItem>
+                                <asp:ListItem>Jeremu Ewoi</asp:ListItem>
+                                <asp:ListItem>Meshack</asp:ListItem>
+                                
+                            </asp:RadioButtonList>
+                        </div>
+
+                    </div>
+
+</div>
+          
+          
+      
+
+
+              
+      
+       
+          
+        </div>
+            <div class="row">
+                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <P>Poet of the year</P><br./>
+
+                        </div>
+                        <div class=" panel-body">
+                            <asp:RadioButtonList ID="RadioButtonList38" runat="server">
+                             
+                                 <asp:ListItem>Double T.</asp:ListItem>
+                                <asp:ListItem>Danco</asp:ListItem>
+                                <asp:ListItem>Otipi The Poet</asp:ListItem>
+
+
+                           
+                            </asp:RadioButtonList>
+                        </div>
+
+                    </div>
+
     </div>
+         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <P>Show host of the year</P><br./>
+
+                        </div>
+                        <div class=" panel-body">
+                            <asp:RadioButtonList ID="RadioButtonList39" runat="server">
+                             
+                                 <asp:ListItem>Muita Muthama (Untreated Talent Talk)</asp:ListItem>
+                                <asp:ListItem>Asaph Muema (Asaph The Great)</asp:ListItem>
+                                <asp:ListItem>Grace Wahome (Mtaachana Tu Show)</asp:ListItem>
+                                <asp:ListItem>Otieno Meryl Atieno (Untreated Talent Talk)</asp:ListItem>
+
+
+
+                           
+                            </asp:RadioButtonList>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                     <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <P>Political analyst of the year</P><br/>
+
+                        </div>
+                        <div class=" panel-body">
+                            <asp:RadioButtonList ID="RadioButtonList37" runat="server">
+                                <asp:ListItem>Elvis KQ</asp:ListItem>
+                                <asp:ListItem>Otieno Milongo</asp:ListItem>
+                                <asp:ListItem>Kangwato Kangwato</asp:ListItem>
+                                
+                            </asp:RadioButtonList>
+                        </div>
+
+                    </div>
+
+</div>
+            </div>
                   <div class="row">
                     <div class="well" style="padding:10px;">
                 <asp:LinkButton ID="LinkButton1" runat="server" CssClass="btn btn-primary" OnClick="LinkButton1_Click4">Finish</asp:LinkButton>
@@ -1030,6 +1213,7 @@
                     </div>
 
                 </div>
+
            <div id="informodal" class="modal fade" role="dialog">
                     <div class="modal-dialog">
                         

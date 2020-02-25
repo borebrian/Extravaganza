@@ -13,65 +13,75 @@ namespace Extravaganza.Voting_pages
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //LETS INSERT VOTERS DATA
-            string kimbely = ConfigurationManager.ConnectionStrings["extravaganzaConnectionString"].ToString();
-            SqlConnection shelly = new SqlConnection(kimbely);
-            SqlCommand cmd1 = new SqlCommand("select Name,count(name) as Votes from dbo.Competitors where Post_ID='1' group by name  ORDER BY Votes DESC ", shelly);
-            shelly.Open();
-            SqlDataReader dr = cmd1.ExecuteReader();
-            GridView1.DataSource = dr;
-            GridView1.DataBind();
-            shelly.Close();
-            string str = ConfigurationManager.ConnectionStrings["extravaganzaConnectionString"].ToString();
-            SqlConnection con = new SqlConnection(str);
-            SqlCommand cmd = new SqlCommand("Select top 1 *from Top_1 Where Post_ID='1' ORDER BY Totals DESC ", con);
-            con.Open();
-            SqlDataReader d = cmd.ExecuteReader();
-            if (d.Read())
-            {
-                Label1.Text = d["Name"].ToString();
+            if (Session["Login"] == null){
+                Response.Redirect("../Voting_pages/Login.aspx");
 
             }
-            con.Close();
-
-            UpcommingaRTIST();
-            eventplanner();
-            bestMC();
-            bestDJ();
-            eventplanner();
-            photographer();
-            dancecrew();
-            solodancer();
-            designer();
-            fashiondesigner();
-            dresseddude();
-            dressedchiq();
-            femalemodel();
-            influwntial();
-            studentleader();
-            makup();
-            spokenword();
-            couples();
-            club();
-            director();
-            enterprenuer();
-            commedian();
-            meme();
-            producer();
-            footballer();
-            athletee();
-            rugby();
-            kerichoartist();
-            software();
-            kerichodancecrew();
-            kerichodj();
-            menmodel();
-            phylantropic();
-            author();
-            software();
-
+            else {
+                //LETS INSERT VOTERS DATA
+                string kimbely = ConfigurationManager.ConnectionStrings["extravaganzaConnectionString"].ToString();
+                SqlConnection shelly = new SqlConnection(kimbely);
+                SqlCommand cmd1 = new SqlCommand("select Name,count(name) as Votes from dbo.Competitors where Post_ID='1' group by name  ORDER BY Votes DESC ", shelly);
+                shelly.Open();
+                SqlDataReader dr = cmd1.ExecuteReader();
+                GridView1.DataSource = dr;
+                GridView1.DataBind();
+                shelly.Close();
+                string str = ConfigurationManager.ConnectionStrings["extravaganzaConnectionString"].ToString();
+                SqlConnection con = new SqlConnection(str);
+                SqlCommand cmd = new SqlCommand("Select top 1 *from Top_1 Where Post_ID='1' ORDER BY Totals DESC ", con);
+                con.Open();
+                SqlDataReader d = cmd.ExecuteReader();
+                if (d.Read())
+                {
+                    Label1.Text = d["Name"].ToString();
 
                 }
+                con.Close();
+
+                UpcommingaRTIST();
+                eventplanner();
+                bestMC();
+                bestDJ();
+                eventplanner();
+                photographer();
+                dancecrew();
+                solodancer();
+                designer();
+                fashiondesigner();
+                dresseddude();
+                dressedchiq();
+                femalemodel();
+                influwntial();
+                studentleader();
+                makup();
+                spokenword();
+                couples();
+                club();
+                director();
+                enterprenuer();
+                commedian();
+                meme();
+                producer();
+                footballer();
+                athletee();
+                rugby();
+                kerichoartist();
+                software();
+                kerichodancecrew();
+                kerichodj();
+                menmodel();
+                phylantropic();
+                author();
+                software();
+                kerichomc();
+                maleathlete();
+                poet();
+                showjost();
+                politicalanalyst();
+            }
+
+        }
         void UpcommingaRTIST()
         {
             string kimbely = ConfigurationManager.ConnectionStrings["extravaganzaConnectionString"].ToString();
@@ -798,8 +808,127 @@ namespace Extravaganza.Voting_pages
             }
             con.Close();
         }
+        void kerichomc()
+        {
+            string kimbely = ConfigurationManager.ConnectionStrings["extravaganzaConnectionString"].ToString();
+            SqlConnection shelly = new SqlConnection(kimbely);
+            SqlCommand cmd1 = new SqlCommand("select Name,count(name) as Votes from dbo.Competitors where Post_ID='32' group by name  ORDER BY Votes DESC ", shelly);
+            shelly.Open();
+            SqlDataReader dr = cmd1.ExecuteReader();
+            GridView35.DataSource = dr;
+            GridView35.DataBind();
+            shelly.Close();
+            string str = ConfigurationManager.ConnectionStrings["extravaganzaConnectionString"].ToString();
+            SqlConnection con = new SqlConnection(str);
+            SqlCommand cmd = new SqlCommand("Select top 1 *from Top_1 Where Post_ID='32' ORDER BY Totals DESC ", con);
+            con.Open();
+            SqlDataReader d = cmd.ExecuteReader();
+            if (d.Read())
+            {
+                Label70.Text = d["Name"].ToString();
+
+            }
+            con.Close();
+        }
+        void maleathlete()
+        {
+            string kimbely = ConfigurationManager.ConnectionStrings["extravaganzaConnectionString"].ToString();
+            SqlConnection shelly = new SqlConnection(kimbely);
+            SqlCommand cmd1 = new SqlCommand("select Name,count(name) as Votes from dbo.Competitors where Post_ID='36' group by name  ORDER BY Votes DESC ", shelly);
+            shelly.Open();
+            SqlDataReader dr = cmd1.ExecuteReader();
+            GridView36.DataSource = dr;
+            GridView36.DataBind();
+            shelly.Close();
+            string str = ConfigurationManager.ConnectionStrings["extravaganzaConnectionString"].ToString();
+            SqlConnection con = new SqlConnection(str);
+            SqlCommand cmd = new SqlCommand("Select top 1 *from Top_1 Where Post_ID='36' ORDER BY Totals DESC ", con);
+            con.Open();
+            SqlDataReader d = cmd.ExecuteReader();
+            if (d.Read())
+            {
+                Label70.Text = d["Name"].ToString();
+
+            }
+            con.Close();
+        }
+        void poet()
+        {
+            string kimbely = ConfigurationManager.ConnectionStrings["extravaganzaConnectionString"].ToString();
+            SqlConnection shelly = new SqlConnection(kimbely);
+            SqlCommand cmd1 = new SqlCommand("select Name,count(name) as Votes from dbo.Competitors where Post_ID='37' group by name  ORDER BY Votes DESC ", shelly);
+            shelly.Open();
+            SqlDataReader dr = cmd1.ExecuteReader();
+            GridView37.DataSource = dr;
+            GridView37.DataBind();
+            shelly.Close();
+            string str = ConfigurationManager.ConnectionStrings["extravaganzaConnectionString"].ToString();
+            SqlConnection con = new SqlConnection(str);
+            SqlCommand cmd = new SqlCommand("Select top 1 *from Top_1 Where Post_ID='37' ORDER BY Totals DESC ", con);
+            con.Open();
+            SqlDataReader d = cmd.ExecuteReader();
+            if (d.Read())
+            {
+                Label70.Text = d["Name"].ToString();
+
+            }
+            con.Close();
+        }
+        void showjost()
+        {
+            string kimbely = ConfigurationManager.ConnectionStrings["extravaganzaConnectionString"].ToString();
+            SqlConnection shelly = new SqlConnection(kimbely);
+            SqlCommand cmd1 = new SqlCommand("select Name,count(name) as Votes from dbo.Competitors where Post_ID='38' group by name  ORDER BY Votes DESC ", shelly);
+            shelly.Open();
+            SqlDataReader dr = cmd1.ExecuteReader();
+            GridView38.DataSource = dr;
+            GridView38.DataBind();
+            shelly.Close();
+            string str = ConfigurationManager.ConnectionStrings["extravaganzaConnectionString"].ToString();
+            SqlConnection con = new SqlConnection(str);
+            SqlCommand cmd = new SqlCommand("Select top 1 *from Top_1 Where Post_ID='38' ORDER BY Totals DESC ", con);
+            con.Open();
+            SqlDataReader d = cmd.ExecuteReader();
+            if (d.Read())
+            {
+                Label70.Text = d["Name"].ToString();
+
+            }
+            con.Close();
+        }
+        void politicalanalyst()
+        {
+            string kimbely = ConfigurationManager.ConnectionStrings["extravaganzaConnectionString"].ToString();
+            SqlConnection shelly = new SqlConnection(kimbely);
+            SqlCommand cmd1 = new SqlCommand("select Name,count(name) as Votes from dbo.Competitors where Post_ID='39' group by name  ORDER BY Votes DESC ", shelly);
+            shelly.Open();
+            SqlDataReader dr = cmd1.ExecuteReader();
+            GridView39.DataSource = dr;
+            GridView39.DataBind();
+            shelly.Close();
+            string str = ConfigurationManager.ConnectionStrings["extravaganzaConnectionString"].ToString();
+            SqlConnection con = new SqlConnection(str);
+            SqlCommand cmd = new SqlCommand("Select top 1 *from Top_1 Where Post_ID='39' ORDER BY Totals DESC ", con);
+            con.Open();
+            SqlDataReader d = cmd.ExecuteReader();
+            if (d.Read())
+            {
+                Label70.Text = d["Name"].ToString();
+
+            }
+            con.Close();
+        }
+
+        protected void ImageButton2_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("../Voting_pages/Login.aspx");
+
+        }
     }
+
+
 }
+
 
 
    
